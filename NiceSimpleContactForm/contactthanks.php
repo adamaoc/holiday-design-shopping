@@ -1,6 +1,7 @@
 <?php 
 $local = dirname(__FILE__);
 	// echo $local.'<br>';
+
 include('../sharedviews/header.php'); ?>
 <div class="container">
 	
