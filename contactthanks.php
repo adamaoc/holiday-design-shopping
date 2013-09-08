@@ -22,4 +22,4 @@ include('sharedviews/header.php'); ?>
 	</div><?php // off row ?>
 
 	</div><?php // off index container ?>
- <?php include('../sharedviews/footer.php'); ?>
+ <?php include('sharedviews/footer.php'); ?>
