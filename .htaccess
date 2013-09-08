@@ -13,5 +13,5 @@ RewriteRule ^about/$ ./about.php
 RewriteRule ^contact$ ./contact.php
 RewriteRule ^contact/$ ./contact.php
 
-RewriteRule ^contactthanks$ ./NiceSimpleContactForm/contactthanks.php
-RewriteRule ^contactthanks/$ ./NiceSimpleContactForm/contactthanks.php
+RewriteRule ^contactthanks$ ./contactthanks.php
+RewriteRule ^contactthanks/$ ./contactthanks.php
