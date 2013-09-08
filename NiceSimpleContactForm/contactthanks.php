@@ -2,7 +2,7 @@
 $local = dirname(__FILE__);
 	// echo $local.'<br>';
 
-include('../sharedviews/header.php'); ?>
+include('/sharedviews/header.php'); ?>
 <div class="container">
 	
 	<div class="row">
