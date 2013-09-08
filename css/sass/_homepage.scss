@@ -1,0 +1,99 @@
+// LAYOUT PAGE 
+
+.navbar-default {
+	background: $secondary-color;
+	color: $white;
+
+	.navbar-brand {
+		color: $primary-color;
+		border-right: 1px solid darken($secondary-color, 8);
+		font-family: $serif;
+		word-spacing: .001em;
+		font-weight: 100;
+		.logo-h, .logo-d {
+			font-size: 140%;
+		}
+		.logo-design {
+			color: $success-color;
+			font-size: 90%;
+		}
+		&:hover {
+			color: $primary-color;
+
+		}
+	}
+
+	.navbar-nav {
+		& > li { 
+			&.active {
+				a {
+					color: $black;
+					background: $alert-color; 
+					box-shadow: inset 1px 1px 8px #333;
+				}
+			}
+			& > a {
+				color: $white;
+				text-transform: uppercase;
+				.caret {
+					border-top-color: $white !important;
+					border-bottom-color: $white !important;
+				}
+				&:hover {
+					color: $white;
+					background: $alert-color;
+				}
+			}
+		}
+	}
+}
+
+// HOME PAGE PRODUCT GRID 
+
+.thumbnail {
+	background: $success-color;
+}
+
+.img-wrap { 
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+.caption {
+	.title {
+		min-height: 55px;
+		@media (min-width: 992px) { 
+			min-height: 7.6em;
+		}
+		@media (min-width: 1200px) { 
+			min-height: 5.7em;
+		}
+	}
+	.item-num {
+		color: $body-font-color;
+	}
+	.price {
+		color: $alert-color;
+		font-size: 140%;
+		letter-spacing: 1px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+/*@media (min-width: 768px) { 
+	body {
+		background: red;
+	}
+}*/
+
+/* Medium devices (desktops, 992px and up) */
+/*@media (min-width: 992px) { 
+	body { background: green !important; }
+}*/
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: 1200px) { 
+	html body { background: white !important; }
+}*/
