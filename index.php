@@ -12,7 +12,7 @@
               <div class="col-xs-12 col-sm-6 col-md-3" style="padding-bottom: 20px;">
                 <div class="thumbnail">
                   <div class="img-wrap">
-                    <img src="/img/pid<?php echo $product->sku; ?>.jpg" alt="<?php echo $product->name; ?>" />
+                    <img src="<?php echo $product->sku; ?>" alt="<?php echo $product->name; ?>" />
                   </div>
                   <div class="caption">
                     <div class="title">
@@ -31,7 +31,9 @@
           <?php 
             } // end IF
           } // end foreach
-        }// off IF data isset
+        }else{
+          echo "<p>No Featured Products at this time.</p>";
+        } // off IF data isset
           ?>
 			</div><?php // off product row ?>
 		</div><?php // off col 12 ?>
