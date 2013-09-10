@@ -8489,41 +8489,46 @@ body {
   background: #eb6477;
 }
 
-/* line 53, ../sass/_homepage.scss */
+/* line 54, ../sass/_homepage.scss */
+#footer .container p {
+  font-size: 80%;
+}
+
+/* line 62, ../sass/_homepage.scss */
 .thumbnail {
   background: #ede0cd;
 }
 
-/* line 57, ../sass/_homepage.scss */
+/* line 66, ../sass/_homepage.scss */
 .img-wrap {
   width: 100%;
 }
-/* line 59, ../sass/_homepage.scss */
+/* line 68, ../sass/_homepage.scss */
 .img-wrap img {
   width: 100%;
 }
 
-/* line 65, ../sass/_homepage.scss */
+/* line 74, ../sass/_homepage.scss */
 .caption .title {
   min-height: 55px;
 }
 @media (min-width: 992px) {
-  /* line 65, ../sass/_homepage.scss */
+  /* line 74, ../sass/_homepage.scss */
   .caption .title {
     min-height: 7.6em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 65, ../sass/_homepage.scss */
+  /* line 74, ../sass/_homepage.scss */
   .caption .title {
     min-height: 5.7em;
   }
 }
-/* line 74, ../sass/_homepage.scss */
+/* line 83, ../sass/_homepage.scss */
 .caption .item-num {
   color: #595958;
 }
-/* line 77, ../sass/_homepage.scss */
+/* line 86, ../sass/_homepage.scss */
 .caption .price {
   color: #eb6477;
   font-size: 140%;
