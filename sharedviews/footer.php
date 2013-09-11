@@ -2,7 +2,7 @@
 
     <div id="footer">
       <div class="container">
-        <p class="text-muted credit">Site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a>  &copy; 2013 All Rights Reserved.</p>
+        <p class="text-muted credit">Site designed and developed by <a href="http://ampnetmedia.com" target="_blank">ampnet(media)</a>  &copy; 2013 All Rights Reserved.</p>
       </div>
     </div>
 
