@@ -26,10 +26,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url>
-    <loc>http://holiday-design.com/store/#!/~/category/id=6515126&offset=0&sort=normal</loc>
-    <lastmod>2013-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1</priority>
-  </url>
 </urlset>
