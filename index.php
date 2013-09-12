@@ -10,7 +10,9 @@
             foreach ($data as $product) { 
               if ($product->enabled == true) { 
                 setlocale(LC_MONETARY, 'en_US');
-                $price = money_format('%i', $product->price); ?>
+                $price = money_format('%i', $product->price);
+                $price = explode(' ', $price);
+                $price = $price[1]; ?>
               <div class="col-xs-12 col-sm-6 col-md-3" style="padding-bottom: 20px;">
                 <div class="thumbnail">
                   <div class="img-wrap">
