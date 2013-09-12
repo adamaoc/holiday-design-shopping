@@ -8,7 +8,9 @@
           <?php 
           if (isset($data)) {
             foreach ($data as $product) { 
-              if ($product->enabled == true) { ?>
+              if ($product->enabled == true) { 
+                setlocale(LC_MONETARY, 'en_US');
+                $price = money_format('%i', $product->price); ?>
               <div class="col-xs-12 col-sm-6 col-md-3" style="padding-bottom: 20px;">
                 <div class="thumbnail">
                   <div class="img-wrap">
@@ -19,7 +21,7 @@
                       <h3><?php echo $product->name; ?></h3>
                     </div>
                     <p class="item-num">Item ID: <?php echo $product->sku; ?></p>
-                    <p class="price">$<?php echo $product->price; ?>.00</p>
+                    <p class="price">$<?php echo $price; ?></p>
                     <p>
                       <a href="/store/#!/~/product/id=<?php echo $product->id; ?>" class="btn btn-primary">
                         View Item &rarr;
