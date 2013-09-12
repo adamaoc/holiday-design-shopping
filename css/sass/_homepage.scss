@@ -60,6 +60,7 @@
 // FOOTER 
 #footer {
 	.container {
+		padding-top: 1em;
 		p {
 			font-size: 70%;
 		}
@@ -72,11 +73,12 @@
 			li {
 				list-style: none;
 				float: left;
-				border-right: 1px solid $secondary-color;
-				padding-right: 0.3em;
-				padding-left: 0.3em;
+				border-right: 1px solid lighten($secondary-color, 15);
+				padding-right: 0.5em;
+				padding-left: 0.5em;
 				a {
 					color: $alert-color;
+					font-size: 70%;
 				}
 			}
 		}
