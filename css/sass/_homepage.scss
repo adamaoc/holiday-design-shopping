@@ -29,6 +29,9 @@
 				li {
 					a {
 						color: #fff;
+						@media (min-width: 992px) {  
+							color: #333;
+						}
 					}
 				}
 			}
