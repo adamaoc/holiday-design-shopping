@@ -8467,68 +8467,90 @@ body {
 .navbar-default .navbar-brand:hover {
   color: #9aac49;
 }
-/* line 29, ../sass/_homepage.scss */
+/* line 30, ../sass/_homepage.scss */
+.navbar-default .navbar-nav .open .dropdown-menu li a {
+  color: #fff;
+}
+/* line 38, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li.active a {
   color: #333333;
   background: #eb6477;
   box-shadow: inset 1px 1px 8px #333;
 }
-/* line 35, ../sass/_homepage.scss */
+/* line 44, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li > a {
   color: white;
   text-transform: uppercase;
 }
-/* line 38, ../sass/_homepage.scss */
+/* line 47, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li > a .caret {
   border-top-color: white !important;
   border-bottom-color: white !important;
 }
-/* line 42, ../sass/_homepage.scss */
+/* line 51, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li > a:hover {
   color: white;
   background: #eb6477;
 }
 
-/* line 54, ../sass/_homepage.scss */
+/* line 63, ../sass/_homepage.scss */
 #footer .container p {
   font-size: 70%;
 }
+/* line 67, ../sass/_homepage.scss */
+#footer .container .footer-nav ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* line 72, ../sass/_homepage.scss */
+#footer .container .footer-nav li {
+  list-style: none;
+  float: left;
+  border-right: 1px solid #6b655c;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+}
+/* line 78, ../sass/_homepage.scss */
+#footer .container .footer-nav li a {
+  color: #eb6477;
+}
 
-/* line 62, ../sass/_homepage.scss */
+/* line 88, ../sass/_homepage.scss */
 .thumbnail {
   background: #ede0cd;
 }
 
-/* line 66, ../sass/_homepage.scss */
+/* line 92, ../sass/_homepage.scss */
 .img-wrap {
   width: 100%;
 }
-/* line 68, ../sass/_homepage.scss */
+/* line 94, ../sass/_homepage.scss */
 .img-wrap img {
   width: 100%;
 }
 
-/* line 74, ../sass/_homepage.scss */
+/* line 100, ../sass/_homepage.scss */
 .caption .title {
   min-height: 55px;
 }
 @media (min-width: 992px) {
-  /* line 74, ../sass/_homepage.scss */
+  /* line 100, ../sass/_homepage.scss */
   .caption .title {
     min-height: 7.6em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 74, ../sass/_homepage.scss */
+  /* line 100, ../sass/_homepage.scss */
   .caption .title {
     min-height: 5.7em;
   }
 }
-/* line 83, ../sass/_homepage.scss */
+/* line 109, ../sass/_homepage.scss */
 .caption .item-num {
   color: #595958;
 }
-/* line 86, ../sass/_homepage.scss */
+/* line 112, ../sass/_homepage.scss */
 .caption .price {
   color: #eb6477;
   font-size: 140%;
