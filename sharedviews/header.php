@@ -10,7 +10,7 @@
     <meta name="author" content="ampnetmedia.com">
     <link rel="shortcut icon" href="/img/favicon.png">
 
-    <title>Holiday Design - Online Shopping for the holidays.</title>
+    <title>Holiday Design - <?php echo dynamicTitle($onpage); ?></title>
     <?php // make a getTitle() function that dynamically displays title name for diff pages. ?>
     <link href="/css/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <!--[if IE]>
