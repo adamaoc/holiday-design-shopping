@@ -49,6 +49,7 @@
               <li <?php if ($onpage == 'store') { echo 'class="active"'; } ?>><a href="/store/">Store</a></li>
               <li <?php if ($onpage == 'about') { echo 'class="active"'; } ?>><a href="/about">About</a></li>
               <li <?php if ($onpage == 'contact') { echo 'class="active"'; } ?>><a href="/contact">Contact</a></li>
+              <li class="cart"><a href="/store/#!/~/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                 <ul class="dropdown-menu">

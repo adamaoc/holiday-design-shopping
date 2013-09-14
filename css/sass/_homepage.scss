@@ -6,10 +6,12 @@
 
 	.navbar-brand {
 		color: $primary-color;
-		border-right: 1px solid darken($secondary-color, 8);
 		font-family: $serif;
 		word-spacing: .001em;
 		font-weight: 100;
+		@media (min-width: 992px) { 
+			border-right: 1px solid darken($secondary-color, 8);
+		}
 		.logo-h, .logo-d {
 			font-size: 140%;
 		}
@@ -33,6 +35,16 @@
 							color: #333;
 						}
 					}
+				}
+			}
+		}
+		.cart {
+			a {
+				font-size: 210%;
+				color: $primary-color;
+				padding: 5px;
+				&:hover {
+					background: transparent;
 				}
 			}
 		}
@@ -89,11 +101,23 @@
 }
 
 // HOME PAGE PRODUCT GRID 
-
+.prod-wrap {
+	padding-bottom: 20px;
+}
 .thumbnail {
 	background: $success-color;
 }
 
+.jumbotron {
+	.container {
+		p {
+			font-size: 0.7em;
+			@media (min-width: 992px) { 
+				font-size: 1em;
+			}
+		}
+	}
+}
 .img-wrap { 
 	width: 100%;
 	img {

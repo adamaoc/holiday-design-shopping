@@ -4,7 +4,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,45 +26,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -3053,8 +3053,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+  src: url("../../fonts/glyphicons-halflings-regular.eot");
+  src: url("../../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
 }
 
 /* line 2392, ../sass/_bootstrap.scss */
@@ -8449,71 +8449,86 @@ body {
 /* line 7, ../sass/_homepage.scss */
 .navbar-default .navbar-brand {
   color: #9aac49;
-  border-right: 1px solid #555049;
   font-family: "Alegreya SC", serif;
   word-spacing: .001em;
   font-weight: 100;
 }
-/* line 13, ../sass/_homepage.scss */
+@media (min-width: 992px) {
+  /* line 7, ../sass/_homepage.scss */
+  .navbar-default .navbar-brand {
+    border-right: 1px solid #555049;
+  }
+}
+/* line 15, ../sass/_homepage.scss */
 .navbar-default .navbar-brand .logo-h, .navbar-default .navbar-brand .logo-d {
   font-size: 140%;
 }
-/* line 16, ../sass/_homepage.scss */
+/* line 18, ../sass/_homepage.scss */
 .navbar-default .navbar-brand .logo-design {
   color: #ede0cd;
   font-size: 90%;
 }
-/* line 20, ../sass/_homepage.scss */
+/* line 22, ../sass/_homepage.scss */
 .navbar-default .navbar-brand:hover {
   color: #9aac49;
 }
-/* line 30, ../sass/_homepage.scss */
+/* line 32, ../sass/_homepage.scss */
 .navbar-default .navbar-nav .open .dropdown-menu li a {
   color: #fff;
 }
 @media (min-width: 992px) {
-  /* line 30, ../sass/_homepage.scss */
+  /* line 32, ../sass/_homepage.scss */
   .navbar-default .navbar-nav .open .dropdown-menu li a {
     color: #333;
   }
 }
-/* line 41, ../sass/_homepage.scss */
+/* line 42, ../sass/_homepage.scss */
+.navbar-default .navbar-nav .cart a {
+  font-size: 210%;
+  color: #9aac49;
+  padding: 5px;
+}
+/* line 46, ../sass/_homepage.scss */
+.navbar-default .navbar-nav .cart a:hover {
+  background: transparent;
+}
+/* line 53, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li.active a {
   color: #333333;
   background: #eb6477;
   box-shadow: inset 1px 1px 8px #333;
 }
-/* line 47, ../sass/_homepage.scss */
+/* line 59, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li > a {
   color: white;
   text-transform: uppercase;
 }
-/* line 50, ../sass/_homepage.scss */
+/* line 62, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li > a .caret {
   border-top-color: white !important;
   border-bottom-color: white !important;
 }
-/* line 54, ../sass/_homepage.scss */
+/* line 66, ../sass/_homepage.scss */
 .navbar-default .navbar-nav > li > a:hover {
   color: white;
   background: #eb6477;
 }
 
-/* line 65, ../sass/_homepage.scss */
+/* line 77, ../sass/_homepage.scss */
 #footer .container {
   padding-top: 1em;
 }
-/* line 67, ../sass/_homepage.scss */
+/* line 79, ../sass/_homepage.scss */
 #footer .container p {
   font-size: 70%;
 }
-/* line 71, ../sass/_homepage.scss */
+/* line 83, ../sass/_homepage.scss */
 #footer .container .footer-nav ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-/* line 76, ../sass/_homepage.scss */
+/* line 88, ../sass/_homepage.scss */
 #footer .container .footer-nav li {
   list-style: none;
   float: left;
@@ -8521,47 +8536,63 @@ body {
   padding-right: 0.5em;
   padding-left: 0.5em;
 }
-/* line 82, ../sass/_homepage.scss */
+/* line 94, ../sass/_homepage.scss */
 #footer .container .footer-nav li a {
   color: #eb6477;
   font-size: 70%;
 }
 
-/* line 93, ../sass/_homepage.scss */
+/* line 104, ../sass/_homepage.scss */
+.prod-wrap {
+  padding-bottom: 20px;
+}
+
+/* line 107, ../sass/_homepage.scss */
 .thumbnail {
   background: #ede0cd;
 }
 
-/* line 97, ../sass/_homepage.scss */
+/* line 113, ../sass/_homepage.scss */
+.jumbotron .container p {
+  font-size: 0.7em;
+}
+@media (min-width: 992px) {
+  /* line 113, ../sass/_homepage.scss */
+  .jumbotron .container p {
+    font-size: 1em;
+  }
+}
+
+/* line 121, ../sass/_homepage.scss */
 .img-wrap {
   width: 100%;
 }
-/* line 99, ../sass/_homepage.scss */
+/* line 123, ../sass/_homepage.scss */
 .img-wrap img {
   width: 100%;
 }
 
-/* line 105, ../sass/_homepage.scss */
+/* line 129, ../sass/_homepage.scss */
 .caption .title {
   min-height: 55px;
 }
 @media (min-width: 992px) {
-  /* line 105, ../sass/_homepage.scss */
+  /* line 129, ../sass/_homepage.scss */
   .caption .title {
     min-height: 7.6em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 105, ../sass/_homepage.scss */
+  /* line 129, ../sass/_homepage.scss */
   .caption .title {
     min-height: 5.7em;
   }
 }
-/* line 114, ../sass/_homepage.scss */
+/* line 138, ../sass/_homepage.scss */
 .caption .item-num {
   color: #595958;
 }
-/* line 117, ../sass/_homepage.scss */
+/* line 141, ../sass/_homepage.scss */
 .caption .price {
   color: #eb6477;
   font-size: 140%;

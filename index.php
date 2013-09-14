@@ -13,7 +13,7 @@
                 $price = money_format('%i', $product->price);
                 $price = explode(' ', $price);
                 $price = $price[1]; ?>
-              <div class="col-xs-12 col-sm-6 col-md-3" style="padding-bottom: 20px;">
+              <div class="col-xs-12 col-sm-6 col-md-3 prod-wrap">
                 <div class="thumbnail">
                   <div class="img-wrap">
                     <img src="<?php echo $product->imageUrl; ?>" alt="<?php echo $product->name; ?>" />
