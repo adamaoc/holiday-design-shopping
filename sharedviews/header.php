@@ -6,12 +6,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="description" content="Online shopping for all your seasonal or holiday decorations. Great for the home or office and sold at amazing prices!">
     <meta name="author" content="ampnetmedia.com">
+
     <link rel="shortcut icon" href="/img/favicon.png">
 
     <title>Holiday Design - <?php echo dynamicTitle($onpage); ?></title>
-    <?php // make a getTitle() function that dynamically displays title name for diff pages. ?>
+    
+    <link rel="apple-touch-icon" href="/img/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/touch-icon-ipad-retina.png" />
+
     <link href="/css/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <!--[if IE]>
         <link href="/css/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />

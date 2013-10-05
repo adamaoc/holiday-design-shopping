@@ -1,6 +1,6 @@
 <?php
 
-function sendMessage($Name, $City, $Emial, $Message) {
+function sendMessage($Name, $City, $Emial, $Message, $EmailTo, $Subject) {
 	// prepare email body text
 	$Body = "";
 	$Body .= "Name: ";
@@ -74,7 +74,7 @@ function validate_send_email($Name, $City, $Email, $Message) {
 	  // print "<meta http-equiv=\"refresh\" content=\"0;URL=/contact/?error=true\">";
 	  // exit;
 	} else {
-		sendMessage($Name, $City, $Email, $Message);
+		sendMessage($Name, $City, $Email, $Message, $EmailTo, $Subject);
 		// print "<meta http-equiv=\"refresh\" content=\"0;URL=/contact/contactthanks\">";
 	}
 
