@@ -7,6 +7,9 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^store$ ./store.php
 RewriteRule ^store/$ ./store.php
 
+RewriteRule ^store/categories$ ./categories.php
+RewriteRule ^store/categories/$ ./categories.php
+
 RewriteRule ^about$ ./about.php
 RewriteRule ^about/$ ./about.php
 

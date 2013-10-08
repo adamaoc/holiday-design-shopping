@@ -8639,3 +8639,32 @@ body {
 .about .btn-padded {
   padding-top: 2em;
 }
+
+/* line 1, ../sass/_cat-list.scss */
+.categories-list {
+  padding-top: 2em;
+}
+/* line 3, ../sass/_cat-list.scss */
+.categories-list .category-item {
+  padding: 0.5em;
+}
+/* line 5, ../sass/_cat-list.scss */
+.categories-list .category-item .img-wrap {
+  width: 100%;
+  margin: 0;
+}
+/* line 8, ../sass/_cat-list.scss */
+.categories-list .category-item .img-wrap img {
+  width: 100%;
+}
+/* line 12, ../sass/_cat-list.scss */
+.categories-list .category-item .title-wrap {
+  text-align: center;
+  height: 2.5em;
+}
+/* line 15, ../sass/_cat-list.scss */
+.categories-list .category-item .title-wrap h2 {
+  font-size: 85%;
+  margin: 0;
+  padding: .5em;
+}

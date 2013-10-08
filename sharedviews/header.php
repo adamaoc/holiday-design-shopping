@@ -1,5 +1,6 @@
 <?php
   include('core/init.php');
+  $HDstore = new EcwidProductApi('2557029');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +54,7 @@
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li <?php if ($onpage == 'index') { echo 'class="active"'; } ?>><a href="/">Home</a></li>
-              <li <?php if ($onpage == 'store') { echo 'class="active"'; } ?>><a href="/store/">Store</a></li>
+              <li <?php if ($onpage == 'store' or $onpage == 'categories') { echo 'class="active"'; } ?>><a href="/store/categories/">Store</a></li>
               <li <?php if ($onpage == 'about') { echo 'class="active"'; } ?>><a href="/about">About</a></li>
               <li <?php if ($onpage == 'contact') { echo 'class="active"'; } ?>><a href="/contact">Contact</a></li>
               <li class="cart"><a href="/store/#!/~/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
