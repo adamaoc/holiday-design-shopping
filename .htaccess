@@ -10,6 +10,12 @@ RewriteRule ^store/$ ./store.php
 RewriteRule ^store/categories$ ./categories.php
 RewriteRule ^store/categories/$ ./categories.php
 
+RewriteRule ^store/category/thanksgiving-decorations$ ./category.php?id=6515126 
+RewriteRule ^store/category/thanksgiving-decorations/$ ./category.php?id=6515126
+
+RewriteRule ^store/category/halloween-decorations$ ./category.php?id=6634210
+RewriteRule ^store/category/halloween-decorations/$ ./category.php?id=6634210
+
 RewriteRule ^about$ ./about.php
 RewriteRule ^about/$ ./about.php
 
