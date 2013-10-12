@@ -17,10 +17,12 @@ if ($category_id == 6515126) {
 
 <?php 
 	foreach ($category as $product) {
+		$url = explode(".com", $product['url']);
+		$url = $url[1];
 		if (isset($product['enabled'])) {
 		?>
 		<li class="row">
-			<a href="/store/<?php echo $product['url']; ?>">
+			<a href="/store/<?php echo $url; ?>">
 				<div class="col-xs-12 col-sm-3">
 					<img src="<?php echo $product['thumbnailUrl']; ?>" alt="<?php $product['name'] ?>" />
 				</div>
