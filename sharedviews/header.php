@@ -63,14 +63,11 @@
                 <ul class="dropdown-menu">
                   <li class="dropdown-header">Categories</li>
                   <li class="divider"></li>
-                  <li><a href="/store/#!/~/category/id=6515126&offset=0&sort=normal">Thanksgiving/Fall</a></li>
-                  <li><a href="/store/#!/~/category/id=6515114&offset=0&sort=normal">Christmas/Winter</a></li>
-                  <li><a href="/store/#!/~/category/id=6515165&offset=0&sort=normal">Floral Decor</a></li>
-                  <li><a href="/store/#!/~/category/id=6515127&offset=0&sort=normal">General Deals</a></li>
-                  <!-- <li class="divider"></li> -->
-                  <!-- <li class="dropdown-header">Sort By</li>
-                  <li><a href="&sort=priceAsc">Price: (low - high)</a></li>
-                  <li><a href="&sort=priceDesc">Price: (high - low)</a></li> -->
+                  <li><a href="/store/category/halloween-decorations/">Halloween/Fall</a></li>
+                  <li><a href="/store/category/thanksgiving-decorations/">Thanksgiving/Fall</a></li>
+                  <li><a href="/store/category/christmas-decorations/">Christmas/Winter</a></li>
+                  <li><a href="/store/category/floral-decor/">Floral Decor</a></li>
+                  <li><a href="/store/category/general-deals/">General Deals</a></li>
                 </ul>
               </li>
             </ul>
