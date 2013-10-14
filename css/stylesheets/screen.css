@@ -8668,3 +8668,52 @@ body {
   margin: 0;
   padding: .5em;
 }
+
+/* line 2, ../sass/_category.scss */
+.products-list .product-item {
+  background: #f1f1f1;
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+}
+/* line 6, ../sass/_category.scss */
+.products-list .product-item a {
+  text-decoration: none;
+}
+/* line 9, ../sass/_category.scss */
+.products-list .product-item .prod-img {
+  max-width: 340px;
+  margin: 0 auto;
+}
+/* line 12, ../sass/_category.scss */
+.products-list .product-item .prod-img img {
+  width: 100%;
+}
+/* line 16, ../sass/_category.scss */
+.products-list .product-item .prod-details {
+  color: #333;
+}
+/* line 20, ../sass/_category.scss */
+.products-list .sku-num {
+  font-size: 90%;
+  font-style: italic;
+}
+/* line 24, ../sass/_category.scss */
+.products-list .price-breakdown {
+  overflow: hidden;
+}
+/* line 26, ../sass/_category.scss */
+.products-list .price-breakdown .our-price {
+  color: #eb6477;
+  font-size: 110%;
+}
+/* line 30, ../sass/_category.scss */
+.products-list .price-breakdown .price-label {
+  float: left;
+  clear: left;
+  padding-right: 0.3em;
+  padding-bottom: 0.3em;
+}
+/* line 36, ../sass/_category.scss */
+.products-list .price-breakdown .price-output {
+  float: left;
+}

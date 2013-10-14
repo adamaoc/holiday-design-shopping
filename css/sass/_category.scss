@@ -1,0 +1,40 @@
+.products-list {
+	.product-item {
+		background: #f1f1f1;
+		padding: 0.5em 0;
+		margin: 0.5em 0; 
+		a {
+			text-decoration: none;
+		}
+		.prod-img {
+			max-width: 340px;
+			margin: 0 auto;
+			img {
+				width: 100%;
+			}
+		}
+		.prod-details {
+			color: #333;
+		}
+	}
+	.sku-num {
+		font-size: 90%;
+		font-style: italic;
+	}
+	.price-breakdown {
+		overflow: hidden;
+		.our-price {
+			color: $alert-color;
+			font-size: 110%;
+		}
+		.price-label {
+			float: left;
+			clear: left;
+			padding-right: 0.3em;
+			padding-bottom: 0.3em;
+		}
+		.price-output {
+			float: left;
+		}
+	}
+}

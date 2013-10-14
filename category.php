@@ -25,23 +25,28 @@ if ($category_id == 6515126) {
 	foreach ($category as $product) {
 		$url = explode(".com", $product['url']);
 		$url = $url[1];
+		setlocale(LC_MONETARY, 'en_US');
+        $price = money_format('%i', $product['price']);
+        $price = explode('USD', $price);
+        $price = $price[1];
+
 		if (isset($product['enabled'])) {
 		?>
-		<li class="row">
+		<li class="row product-item">
 			<a href="/store<?php echo $url; ?>">
-				<div class="col-xs-12 col-sm-3">
-					<img src="<?php echo $product['thumbnailUrl']; ?>" alt="<?php $product['name'] ?>" />
+				<div class="col-xs-12 col-sm-3 prod-img">
+					<img src="<?php echo $product['imageUrl']; ?>" alt="<?php $product['name'] ?>" />
 				</div>
-				<div class="col-xs-12 col-sm-9">
+				<div class="col-xs-12 col-sm-9 prod-details">
 					<h3><?php echo $product['name']; ?></h3>
-					<p>SKU# <?php echo $product['sku']; ?></p>
-					<dl>
-						<dt>Price: </dt>
-						<dd><?php echo $product['price']; ?></dd>
-						<dt>Retail: </dt>
-						<dd><?php echo $product['compareToPrice']; ?></dd>
+					<p class="sku-num">SKU# <?php echo $product['sku']; ?></p>
+					<dl class="price-breakdown">
+						<dt class="price-label our-price">Our Price: </dt>
+						<dd class="price-output our-price">$<?php echo $price; ?></dd>
+						<dt class="price-label">Suggested Retail: </dt>
+						<dd class="price-output">$<?php echo $product['compareToPrice']; ?></dd>
 					</dl>
-					<p><?php echo $product['description']; ?></p>
+					<div><?php echo $product['description']; ?></div>
 				</div>
 			</a>
 		</li>
