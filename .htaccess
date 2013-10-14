@@ -16,6 +16,15 @@ RewriteRule ^store/category/thanksgiving-decorations/$ ./category.php?id=6515126
 RewriteRule ^store/category/halloween-decorations$ ./category.php?id=6634210
 RewriteRule ^store/category/halloween-decorations/$ ./category.php?id=6634210
 
+RewriteRule ^store/category/floral-decor$ ./category.php?id=6515165
+RewriteRule ^store/category/floral-decor/$ ./category.php?id=6515165
+
+RewriteRule ^store/category/general-deals$ ./category.php?id=6515127
+RewriteRule ^store/category/general-deals/$ ./category.php?id=6515127
+
+RewriteRule ^store/category/christmas-decorations$ ./category.php?id=6515114
+RewriteRule ^store/category/christmas-decorations/$ ./category.php?id=6515114
+
 RewriteRule ^about$ ./about.php
 RewriteRule ^about/$ ./about.php
 

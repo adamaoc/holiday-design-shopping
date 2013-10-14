@@ -9,6 +9,12 @@ if ($category_id == 6515126) {
 	$category_title = "Thanksgiving and Fall";
 }elseif ($category_id == 6634210) {
 	$category_title = "Halloween";
+}elseif ($category_id == 6515165) {
+	$category_title = "Floral";
+}elseif ($category_id == 6515127) {
+	$category_title = "General Deals";
+}elseif ($category_id == 6515114) {
+	$category_title = "Christmas";
 }
  ?>
 <div class="container">
@@ -22,7 +28,7 @@ if ($category_id == 6515126) {
 		if (isset($product['enabled'])) {
 		?>
 		<li class="row">
-			<a href="/store/<?php echo $url; ?>">
+			<a href="/store<?php echo $url; ?>">
 				<div class="col-xs-12 col-sm-3">
 					<img src="<?php echo $product['thumbnailUrl']; ?>" alt="<?php $product['name'] ?>" />
 				</div>
