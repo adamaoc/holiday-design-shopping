@@ -2,8 +2,9 @@
 $local = dirname(__FILE__);
 	// echo $local.'<br>';
 include('NiceSimpleContactForm/contactengine.php');
+
 if (isset($_POST['Name'])){
-	$formStatus = validate_send_email($_POST['Name'], $_POST['City'], $_POST['Email'], $_POST['Message']);
+	$formStatus = validate_send_email($_POST['Name'], $_POST['City'], $_POST['Email'], $_POST['Message'], $_POST['moreinfo']);
 }
 include('sharedviews/header.php'); ?>
 <div class="container">
@@ -39,6 +40,10 @@ include('sharedviews/header.php'); ?>
 				<div class="form-group">
 					<label for="Email">Email:</label>
 					<input type="text" name="Email" id="Email" class="form-control" placeholder="youremail@youremail.com" />
+				</div>
+				<div class="dont-show">
+					<label for="moreinfo">More Info</label>
+					<input type="text" name="moreinfo" id="moreinfo" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="Message">Message:</label><br />

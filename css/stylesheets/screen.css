@@ -8625,6 +8625,13 @@ body {
   text-transform: uppercase;
 }
 
+/* line 11, ../sass/_contact.scss */
+.dont-show {
+  visibility: hidden;
+  height: .01em;
+  overflow: hidden;
+}
+
 /* line 2, ../sass/_about.scss */
 .about .row {
   padding: 2em 0;

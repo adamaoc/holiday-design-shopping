@@ -7,3 +7,9 @@
 	color: $white;
 	text-transform: uppercase;
 }
+
+.dont-show {
+	visibility: hidden;
+	height: .01em;
+	overflow: hidden;
+}

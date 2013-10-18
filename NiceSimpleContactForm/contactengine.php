@@ -1,6 +1,7 @@
 <?php
 
-function sendMessage($Name, $City, $Emial, $Message, $EmailTo, $Subject) {
+function sendMessage($Name, $City, $Email, $Message, $EmailTo, $Subject) {
+	$EmailFrom = "contact@holiday-design.com";
 	// prepare email body text
 	$Body = "";
 	$Body .= "Name: ";
@@ -23,21 +24,25 @@ function sendMessage($Name, $City, $Emial, $Message, $EmailTo, $Subject) {
 	
 }
 
-function validate_send_email($Name, $City, $Email, $Message) {
-	$EmailFrom = "contact@holiday-design.com";
+function validate_send_email($Name, $City, $Email, $Message, $bottest) {
 	$EmailTo = "contact@holiday-design.com";
 	$Subject = "New message from holiday-design - ";
-	$Name = Trim(stripslashes($_POST['Name'])); 
-	$City = Trim(stripslashes($_POST['City'])); 
-	$Email = Trim(stripslashes($_POST['Email'])); 
-	$Message = Trim(stripslashes($_POST['Message'])); 
+	$Name = Trim(stripslashes($Name)); 
+	$City = Trim(stripslashes($City)); 
+	$Email = Trim(stripslashes($Email)); 
+	$Message = Trim(stripslashes($Message)); 
+	$bottest = Trim(stripcslashes($bottest));
 
-	// echo $Name.' '.$City.' '.$Email.' '.$Message.'<br>';
 
 	// validation
 	$validationOK=true;
 
 	$error = array();
+
+	if (!empty($bottest)) {
+		$validationOK = false;
+		$error[] = "Wow... Something went wrong here. Maybe try again.";
+	}
 
 	if (isset($Name)) {
 		if ($Name == '' or $Name == ' ') {
@@ -69,23 +74,10 @@ function validate_send_email($Name, $City, $Email, $Message) {
 
 	if (!$validationOK) {
 		$emailStatus = $error;
-		// echo "<br>";
-		// print_r($error);
-	  // print "<meta http-equiv=\"refresh\" content=\"0;URL=/contact/?error=true\">";
-	  // exit;
 	} else {
 		sendMessage($Name, $City, $Email, $Message, $EmailTo, $Subject);
-		// print "<meta http-equiv=\"refresh\" content=\"0;URL=/contact/contactthanks\">";
 	}
 
-
-	// redirect to success page 
-	// if ($success){
-	//   print "<meta http-equiv=\"refresh\" content=\"0;URL=/contact/contactthanks\">";
-	// }
-	// else{
-	//   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-	// }
 	return $emailStatus;
 }
 ?>
