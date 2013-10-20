@@ -1,39 +1,3 @@
-Options +FollowSymLinks
-RewriteEngine On
-
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteCond %{SCRIPT_FILENAME} !-f
-
-RewriteRule ^store$ ./store.php
-RewriteRule ^store/$ ./store.php
-
-RewriteRule ^store/categories$ ./categories.php
-RewriteRule ^store/categories/$ ./categories.php
-
-RewriteRule ^store/category/thanksgiving-decorations$ ./category.php?id=6515126 
-RewriteRule ^store/category/thanksgiving-decorations/$ ./category.php?id=6515126
-
-RewriteRule ^store/category/halloween-decorations$ ./category.php?id=6634210
-RewriteRule ^store/category/halloween-decorations/$ ./category.php?id=6634210
-
-RewriteRule ^store/category/floral-decor$ ./category.php?id=6515165
-RewriteRule ^store/category/floral-decor/$ ./category.php?id=6515165
-
-RewriteRule ^store/category/general-deals$ ./category.php?id=6515127
-RewriteRule ^store/category/general-deals/$ ./category.php?id=6515127
-
-RewriteRule ^store/category/christmas-decorations$ ./category.php?id=6515114
-RewriteRule ^store/category/christmas-decorations/$ ./category.php?id=6515114
-
-RewriteRule ^about$ ./about.php
-RewriteRule ^about/$ ./about.php
-
-RewriteRule ^contact$ ./contact.php
-RewriteRule ^contact/$ ./contact.php
-
-RewriteRule ^contactthanks$ ./contactthanks.php
-RewriteRule ^contactthanks/$ ./contactthanks.php
-
 # BEGIN GZIP
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
@@ -103,3 +67,43 @@ ErrorDocument 404 /404.php
     </IfModule>
 
 </IfModule>
+
+# ##############################################################################
+# # Rewrite Rules                                                              #
+# ##############################################################################
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^store$ ./store.php
+RewriteRule ^store/$ ./store.php
+
+RewriteRule ^store/categories$ ./categories.php
+RewriteRule ^store/categories/$ ./categories.php
+
+RewriteRule ^store/category/thanksgiving-decorations$ ./category.php?id=6515126 
+RewriteRule ^store/category/thanksgiving-decorations/$ ./category.php?id=6515126
+
+RewriteRule ^store/category/halloween-decorations$ ./category.php?id=6634210
+RewriteRule ^store/category/halloween-decorations/$ ./category.php?id=6634210
+
+RewriteRule ^store/category/floral-decor$ ./category.php?id=6515165
+RewriteRule ^store/category/floral-decor/$ ./category.php?id=6515165
+
+RewriteRule ^store/category/general-deals$ ./category.php?id=6515127
+RewriteRule ^store/category/general-deals/$ ./category.php?id=6515127
+
+RewriteRule ^store/category/christmas-decorations$ ./category.php?id=6515114
+RewriteRule ^store/category/christmas-decorations/$ ./category.php?id=6515114
+
+RewriteRule ^about$ ./about.php
+RewriteRule ^about/$ ./about.php
+
+RewriteRule ^contact$ ./contact.php
+RewriteRule ^contact/$ ./contact.php
+
+RewriteRule ^contactthanks$ ./contactthanks.php
+RewriteRule ^contactthanks/$ ./contactthanks.php
