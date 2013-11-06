@@ -1,5 +1,9 @@
 // LAYOUT PAGE 
 
+.inner-row {
+	margin: 0;
+}
+
 .navbar-default {
 	background: $secondary-color;
 	color: $white;
@@ -105,7 +109,7 @@
 	padding-bottom: 20px;
 }
 .thumbnail {
-	background: $success-color;
+	background: transparent;
 }
 
 .jumbotron {
@@ -143,6 +147,11 @@
 		font-size: 140%;
 		letter-spacing: 1px;
 	}
+}
+
+.new-arivals {
+	overflow: hidden;
+	background-color: lighten($success-color, 10%);
 }
 
 /* Small devices (tablets, 768px and up) */

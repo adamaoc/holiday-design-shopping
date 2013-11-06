@@ -5,18 +5,16 @@ $black: #333;
 $sans-serif: 'Sintony', sans-serif;;
 $serif: 'Alegreya SC', serif;
 
-$body-bg: #fff;
-$body-font-color: #595958;
-$body-font-family: $sans-serif; //"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$body-font-weight: normal;
-$body-font-style: normal;
-
-
 $primary-color: #9AAC49; // green
 $secondary-color: #6B655C; // brown
 $alert-color: #EB6477; // pink
 $success-color: #EDE0CD; // tan 
 
+$body-bg: $success-color;
+$body-font-color: #595958;
+$body-font-family: $sans-serif; //"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
 
 // TYPOGRAPHY
 
@@ -24,15 +22,20 @@ h1, h2, h3, h4 {
 	font-family: $serif;
 	color: $primary-color;
 	font-weight: 100;
+	margin: 0.5rem 0;
 }
 
 body {
+	background: $body-bg;
 	font-family: $body-font-family;
 }
 
 .module {
-	background: $success-color;
-	padding: 2em;
+	background: $white;
+	padding: 0.5em;
+	h1, h2, h3, h4 {
+		margin: 0;
+	}
 }
 
 .btn-success {
